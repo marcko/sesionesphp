@@ -15,4 +15,5 @@ if (!$db_selected) {
     die ('ola k ase fallo la  base de datos: ' . mysql_error());
 }
 }
+
 ?>
