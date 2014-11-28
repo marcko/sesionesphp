@@ -31,4 +31,6 @@ Download zip
   cd sesionesphp; cd /var/www/ && sudo rm -r html/ ; sudo mkdir html && sudo mv user/home/sesionesphp/* /var/www/
  
 
+open http://localhost in the browser
+
 Enjoy! 
