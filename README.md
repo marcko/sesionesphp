@@ -9,7 +9,7 @@ Install lamp, WAMP , MAMP
 
 open terminal and input the following
 
-    mysql -uroot -proot
+    mysql -u"user" -p"password"
 
 Create database
   
