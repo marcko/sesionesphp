@@ -2,10 +2,10 @@
 $host = "localhost";
 $bd = "register";
 $user = "root";
-//$pass = "root";
+$pass = "root";
 
 //conexión al servidor y base de datos mysql
-$connection = mysql_connect($host, $user);
+$connection = mysql_connect($host, $user,$pass);
 if (!$connection) {
     die('ola k ase fallo la conexión con el servidor: ' . mysql_error());
 }else{

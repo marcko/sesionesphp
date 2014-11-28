@@ -1,3 +1,12 @@
-.row{
-  margin-top: 200px;
+body { 
+  background: url("../img/p6.png");
+}
+.row2{
+  margin-top:150px;
+}
+.row3{
+    margin-top:150px;
+}
+.navleft{
+  margin-top:100px;
 }
