@@ -7,7 +7,7 @@ Install lamp, WAMP , MAMP
 
 ### Instructions
 
-open terminal and input the following
+Open terminal and enter the following
 
     mysql -u"user" -p"password"
 
