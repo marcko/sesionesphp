@@ -3,7 +3,7 @@ _______________________________
 
 ###Requirements:
 
-haved installed lamp, wamp, mamp
+Install lamp, WAMP , MAMP
 
 ### Instructions
 
