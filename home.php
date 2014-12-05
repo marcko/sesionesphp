@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>  <?php
-    include 'validation.php';
+    include 'validationadmin.php';
     echo  $_SESSION["currently"]; ?></title> 
 
          <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
@@ -21,70 +20,66 @@
     <div class="row">
 
      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 navleft">
+    <!-- Button trigger modal -->
 
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#oracle">
+  Registro de usuarios
+</button>
 
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-           <?php
-    include 'validation.php';
-    echo  $_SESSION["oracle"];
-     
+<!-- Modal -->
 
-     ?>
-    
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-       Analisis de BD
+
+<div class="modal fade" id="oracle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Register</h4>
+ </div>
+
+  <div class="modal-body">
+   <form action="register.php" method="POST" role="form" name"forma">
+
+  <div class="form-group">
+
+      <input type="email" class="form-control" id="" placeholder="email" name="email" required>
+      <input type="password" class="form-control" id="password" placeholder="password" name="password"  required>
+      <div class="btn-group" data-toggle="buttons">
+
+       <legend>Acceso a aplicaciones</legend>
+
+  <label class="btn btn-warning">
+    <input type="checkbox" name="omega" value="omega"> Omega
+  </label>
+  <label class="btn btn-warning">
+    <input type="checkbox" autocomplete="off" name="sap" value="sap"> Sap
+  </label>
+  <label class="btn btn-warning">
+    <input type="checkbox" autocomplete="off" name="oracle" value="oracle"> Oracle
+  </label>
+
+
+
+
       </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-        <?php
-    include 'validation.php';
-    echo   $_SESSION['sap'];
-     
-
-     ?>
-    
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-       Herramientas ABAP
       </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-           <?php
-    include 'validation.php';
-    echo   $_SESSION['omega'];
-     
 
-     ?>
 
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-           Gestión de cambios
+
+
+
+      
+   </div>
+
+ 
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" >Submit</button>
       </div>
     </div>
   </div>
 </div>
+</form>
+    
       </div>
 
 
@@ -94,7 +89,7 @@
        <h1 >Hola bienvenido a tu sesión</h1>
         <p class="glyphicon glyphicon-user">
    <?php
-    include 'validation.php';
+    include 'validationadmin.php';
     echo  $_SESSION["currently"];
 
 
@@ -106,9 +101,7 @@
       </p>
       </div>
     </div>
-       
  
-    
 
   
     </div> 
