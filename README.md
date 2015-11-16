@@ -22,13 +22,14 @@ Create table
 Install Project
 _______________________________
 
+  cd /var/www/html && sudo rm index.html
   git clone https://github.com/marcko/sesionesphp.git
 
 or 
 
 Download zip
-
-  cd sesionesphp; cd /var/www/ && sudo rm -r html/ ; sudo mkdir html && sudo mv user/home/sesionesphp/* /var/www/
+  sudo rm /var/www/html/index.html
+  cd sesionesphp; sudo mv * /var/www/html
  
 
 open http://localhost in the browser
