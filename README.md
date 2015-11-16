@@ -22,7 +22,8 @@ Create table
 Install Project
 _______________________________
 
-  cd /var/www/html && sudo rm index.html
+  cd /var/www/html && sudo rm index.html;
+  
   git clone https://github.com/marcko/sesionesphp.git
 
 or 
